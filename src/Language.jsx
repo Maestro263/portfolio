@@ -10,27 +10,27 @@ const Language = () => {
             <h1>Programming Languages</h1>
             <ul>
                 <div className="label-icon">
-             <li><FaHtml5 className="language-icons" /></li>
-<p>HTML</p>
+                    <li><FaHtml5 className="language-icons" /></li>
+                    <p>HTML</p>
                 </div>
                 <div className="label-icon">
-                <li><FaSass className="language-icons" /></li>
+                    <li><FaSass className="language-icons" /></li>
                     <p>SASS</p>
                 </div>
                 <div className="label-icon">
-                <li><FaCss3Alt className="language-icons" /></li>
+                    <li><FaCss3Alt className="language-icons" /></li>
                     <p>CSS</p>
                 </div>
                 <div className="label-icon">
-                <li><SiJavascript className="language-icons" /></li>
+                    <li><SiJavascript className="language-icons" /></li>
                     <p>JavaScript</p>
                 </div>
                 <div className="label-icon">
-                <li><FaReact className="language-icons" /></li>
+                    <li><FaReact className="language-icons" /></li>
                     <p>ReactJs</p>
                 </div>
                 <div className="label-icon">
-                <li><FaPython className="language-icons" /></li>
+                    <li><FaPython className="language-icons" /></li>
                     <p>Python</p>
                 </div>
             </ul>
