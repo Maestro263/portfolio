@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Navlink from '../src/Navlink';
+import AboutMe from '../src/AboutMe';
+import Language from '../src/Language';
+import Cv from '../src/Cv';
+import Cases from '../src/Cases';
+import React from 'react';
+
 
 function App() {
+  console.log(document.getElementsByClassName("cvtag"));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navlink />
+      <AboutMe />
+      <Language  />
+      <Cv className="cvtag" />
+      <Cases />
     </div>
   );
 }
+
+
 
 export default App;
