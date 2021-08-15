@@ -5,9 +5,6 @@
   margin: auto;
 }
 
-
-
-
 .nav-links{
   background-color: cadetblue;
   overflow: hidden;
@@ -28,7 +25,6 @@
   list-style: none;
   padding: 5px;
   visibility: hidden;
-  
 }
 
 .burger-nav ul :hover{
@@ -73,11 +69,17 @@
     cursor: pointer;
   }
 
-
   .about-me p {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .about-me h1{
+    margin: 30px 0 30px 0;
   }
   
   .about-me img{
@@ -131,8 +133,13 @@
 
   .cases a:hover + .centered p {
     color:transparent;
-  
   }
+
+  .cases h1{
+    margin: 30px 0 30px 0;
+  }
+
+  
 
   .cases h4{
     font-size: 17pt;
@@ -152,5 +159,78 @@
     filter: none;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 992px) {
+    .fontAwesomeIconBar{
+      display: none;
+    }
+
+    .burger-nav{
+      background-color: cadetblue;
+      height: 50px;
+    }
+
+    .burger-nav li{
+      visibility: visible;
+      padding: 15px;
+      border-radius: 25px;
+      width: 100%;
+    }
+
+    .burger-nav ul{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .topBtn{
+      width: 50px;
+      height: 50px;
+    }
+
+    .fontAwesomeIcon{
+      font-size: 22pt;
+      padding-top: 10px;
+    }
+    
+    .nav-links{
+      overflow: visible;
+    }
+
+    .about-me p{
+      width: 40%;
+      margin-bottom: 30px;
+    }
+
+    .about-me h1{
+      margin: 30px 0 30px 0;
+    }
+
+    .language ul{
+      justify-content: space-between;
+      margin-bottom: 30px;
+      width: 35%;
+    }
+
+    .language ul li{
+      margin: 20px;
+      padding-right: 20px;
+    }
+
+    .label-icon p{
+      padding-right: 20px;
+    }
+
+    .cv{
+      margin-bottom: 30px;;
+    }
+
+    .cases-body{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 70%;
+    }
+
+    .cases h1{
+      margin-bottom: 30px;
+    }
 }

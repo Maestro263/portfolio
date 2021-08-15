@@ -7,25 +7,25 @@ const Navlink = () => {
 
   function goToCases() {
     if (window.innerWidth > 800) {
-      window.scrollTo({ top: 1420, behavior: "smooth" });
+      window.scrollTo({ top: 1500, behavior: "smooth" });
     } else {
-      window.scrollTo({ top: 1620, behavior: "smooth" });
+      window.scrollTo({ top: 1640, behavior: "smooth" });
     }
   }
 
   function goToLanguage() {
     if (window.innerWidth > 800) {
-      window.scrollTo({ top: 490, behavior: "smooth" });
+      window.scrollTo({ top: 590, behavior: "smooth" });
     } else {
-      window.scrollTo({ top: 680, behavior: "smooth" });
+      window.scrollTo({ top: 720, behavior: "smooth" });
     }
   }
 
   function goToCv() {
     if (window.innerWidth > 800) {
-      window.scrollTo({ top: 740, behavior: "smooth" });
+      window.scrollTo({ top: 970, behavior: "smooth" });
     } else {
-      window.scrollTo({ top: 940, behavior: "smooth" });
+      window.scrollTo({ top: 990, behavior: "smooth" });
     }
   }
 
