@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp, faBars } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp, faBars } from "@fortawesome/free-solid-svg-icons";
+import { useToggle } from "react-use";
+import { useState } from "react";
 
 const Navlink = () => {
-
-
   function goToCases() {
     if (window.innerWidth > 800) {
       window.scrollTo({ top: 1500, behavior: "smooth" });
@@ -33,52 +32,37 @@ const Navlink = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  let clicked = true;
-  let targList = document.getElementsByClassName("burger-p");
-
-  function burgerScroll() {
-    const burgerBar = document.getElementById("burgerbar");
-    if (clicked === true) {
-      document.getElementById("burgerbar").style.height = "120px";
-      document.getElementById("burgerbar").style.transition = "height 1s";    
-     
-      if (targList) {
-        for (var x = 0; x < targList.length; x++) {
-          targList[x].style.visibility = "visible";
-        }
-      }
-    clicked = false;
-  } else if (clicked === false) {
-    document.getElementById("burgerbar").style.transition = "height 1s";
-    document.getElementById("burgerbar").style.height = "30px";
-    if (targList) {
-      for (var x = 0; x < targList.length; x++) {
-        targList[x].style.visibility = "hidden";
-        
-      }
-    }
-    clicked = true;
+  function myFunction() {
+    let element = document.getElementById("burgerbar");
+    element.classList.toggle("burger-nav-visible");
   }
 
-
-}
-
-
-return (
-
-  <div className="nav-links">
-    <div className="topBtn" onClick={goToTop}><FontAwesomeIcon icon={faArrowUp} className="fontAwesomeIcon" /></div>
-    <div className="burger-nav" id="burgerbar" >
-      <div className="fontAwesomeIconBar"><FontAwesomeIcon icon={faBars} className="fontAwesomeIcon" onClick={burgerScroll} /></div>
-      <ul>
-        <li className="burger-p" name="li-tags">About me </li>
-        <li className="burger-p" name="li-tags" onClick={goToCv}>CV</li>
-        <li className="burger-p" name="li-tags" onClick={goToLanguage}>Programming languages</li>
-        <li className="burger-p" name="li-tags" onClick={goToCases}>Cases</li>
-      </ul>
+  return (
+    <div className="nav-links">
+      <div className="topBtn" onClick={goToTop}>
+        <FontAwesomeIcon icon={faArrowUp} className="fontAwesomeIcon" />
+      </div>
+      <div className="burger-nav" id="burgerbar" onClick={myFunction}>
+        <div className="fontAwesomeIconBar" id="burgerIcon">
+          <FontAwesomeIcon icon={faBars} className="fontAwesomeIcon" />
+        </div>
+        <ul>
+          <li className="burger-p" name="li-tags">
+            About me{" "}
+          </li>
+          <li className="burger-p" name="li-tags" onClick={goToCv}>
+            CV
+          </li>
+          <li className="burger-p" name="li-tags" onClick={goToLanguage}>
+            Programming languages
+          </li>
+          <li className="burger-p" name="li-tags" onClick={goToCases}>
+            Cases
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-);
-}
+  );
+};
 
 export default Navlink;
