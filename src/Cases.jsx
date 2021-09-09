@@ -3,6 +3,7 @@ import case2 from "../src/Images/case2.png";
 import case3 from "../src/Images/case3.png";
 import case4 from "../src/Images/case4.png";
 import case5 from "../src/Images/case5.png";
+import case6 from "../src/Images/case6.png";
 
 const Cases = () => {
   return (
@@ -73,6 +74,21 @@ const Cases = () => {
             <p>???</p>
           </div>
           <h4>Fetching and Creating Data</h4>
+        </div>
+
+        <div className="container">
+          <a
+            href="https://mystifying-joliot-fdd933.netlify.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <img src={case6} alt="Todo App" />{" "}
+          </a>
+          <div className="centered">
+            <p>???</p>
+          </div>
+          <h4>Todo App</h4>
         </div>
       </div>
     </div>
